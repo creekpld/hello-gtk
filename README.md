@@ -1,18 +1,20 @@
-## GTK app with Rust example
+# example GTK app with Rust
 
-'''bash
+## Setup and Run
 
-    #install rust nightly with rustup
+   ```sh
+    # 1.install rust nightly with rustup
 
-    // update 
+    # 2. update 
     rustup update
 
-    //install rls
+    # 3. Install the RLS
     rustup component add rls-preview
     rustup component add rust-analysis
     rustup component add rust-src
 
+    # 4. Run
     cd hello-gtk
     cargo run
 
-'''
+  ```
