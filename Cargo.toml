@@ -1,7 +1,8 @@
 [package]
-name = "hello"
+name = "hello-gtk"
 version = "0.1.0"
 authors = ["pld"]
 
 [dependencies]
-gtk = { git = "https://github.com/gtk-rs/gtk.git" }
+gtk = { git = "https://github.com/gtk-rs/gtk.git", features = ["v3_16"] }
+gdk = { git = "https://github.com/gtk-rs/gdk.git" }
