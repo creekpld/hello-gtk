@@ -1,0 +1,294 @@
+[[package]]
+name = "atk-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "bitflags"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "c_vec"
+version = "1.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "cairo-rs"
+version = "0.3.0"
+source = "git+https://github.com/gtk-rs/cairo#1327d569f3fd212e7b7139f492ad1d83fcfc23c7"
+dependencies = [
+ "c_vec 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cairo-sys-rs 0.5.0 (git+https://github.com/gtk-rs/cairo)",
+ "glib 0.4.0 (git+https://github.com/gtk-rs/glib)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "cairo-sys-rs"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/cairo#1327d569f3fd212e7b7139f492ad1d83fcfc23c7"
+dependencies = [
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gdk"
+version = "0.7.0"
+source = "git+https://github.com/gtk-rs/gdk#b294d3f44d4841c00484be232a8fccd24f7da316"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cairo-rs 0.3.0 (git+https://github.com/gtk-rs/cairo)",
+ "cairo-sys-rs 0.5.0 (git+https://github.com/gtk-rs/cairo)",
+ "gdk-pixbuf 0.3.0 (git+https://github.com/gtk-rs/gdk-pixbuf)",
+ "gdk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gio 0.3.0 (git+https://github.com/gtk-rs/gio)",
+ "glib 0.4.0 (git+https://github.com/gtk-rs/glib)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pango 0.3.0 (git+https://github.com/gtk-rs/pango)",
+]
+
+[[package]]
+name = "gdk-pixbuf"
+version = "0.3.0"
+source = "git+https://github.com/gtk-rs/gdk-pixbuf#1e9ce854c3f57b6e59f35225ffe7687cb2321aea"
+dependencies = [
+ "gdk-pixbuf-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gio 0.3.0 (git+https://github.com/gtk-rs/gio)",
+ "gio-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "glib 0.4.0 (git+https://github.com/gtk-rs/glib)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gdk-pixbuf-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gio-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gdk-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cairo-sys-rs 0.5.0 (git+https://github.com/gtk-rs/cairo)",
+ "gdk-pixbuf-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gio-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pango-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gio"
+version = "0.3.0"
+source = "git+https://github.com/gtk-rs/gio#c004cb8503633214e1ef26eace2e3b7793645545"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gio-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "glib 0.4.0 (git+https://github.com/gtk-rs/glib)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gio-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "glib"
+version = "0.4.0"
+source = "git+https://github.com/gtk-rs/glib#a78f961b6b0ea0cce4bd173b4eab4d25e1dae32d"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "lazy_static 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "glib-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gobject-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gtk"
+version = "0.3.0"
+source = "git+https://github.com/gtk-rs/gtk.git#1efdfd8d9a9bafcd0c4f5c87816bbecc3930a1eb"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cairo-rs 0.3.0 (git+https://github.com/gtk-rs/cairo)",
+ "cairo-sys-rs 0.5.0 (git+https://github.com/gtk-rs/cairo)",
+ "gdk 0.7.0 (git+https://github.com/gtk-rs/gdk)",
+ "gdk-pixbuf 0.3.0 (git+https://github.com/gtk-rs/gdk-pixbuf)",
+ "gdk-pixbuf-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gdk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gio 0.3.0 (git+https://github.com/gtk-rs/gio)",
+ "gio-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "glib 0.4.0 (git+https://github.com/gtk-rs/glib)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gtk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pango 0.3.0 (git+https://github.com/gtk-rs/pango)",
+]
+
+[[package]]
+name = "gtk-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "atk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cairo-sys-rs 0.5.0 (git+https://github.com/gtk-rs/cairo)",
+ "gdk-pixbuf-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gdk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gio-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pango-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "hello"
+version = "0.1.0"
+dependencies = [
+ "gtk 0.3.0 (git+https://github.com/gtk-rs/gtk.git)",
+]
+
+[[package]]
+name = "lazy_static"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.2.35"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "pango"
+version = "0.3.0"
+source = "git+https://github.com/gtk-rs/pango#217b081664ffebafb5b4214cf97067243544c077"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "glib 0.4.0 (git+https://github.com/gtk-rs/glib)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pango-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+]
+
+[[package]]
+name = "pango-sys"
+version = "0.5.0"
+source = "git+https://github.com/gtk-rs/sys#8d08c14dbf25800f94ea13ca250edce0f41e5270"
+dependencies = [
+ "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)",
+ "libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "pkg-config"
+version = "0.3.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "winapi"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "winapi-i686-pc-windows-gnu 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi-x86_64-pc-windows-gnu 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "winapi-i686-pc-windows-gnu"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "winapi-x86_64-pc-windows-gnu"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum atk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b3c30d3802dfb7281680d6285f2ccdaa8c2d8fee41f93805dba5c4cf50dc23cf"
+"checksum c_vec 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "6237ac5a4b1e81c213c24c6437964c61e646df910a914b4ab1487b46df20bd13"
+"checksum cairo-rs 0.3.0 (git+https://github.com/gtk-rs/cairo)" = "<none>"
+"checksum cairo-sys-rs 0.5.0 (git+https://github.com/gtk-rs/cairo)" = "<none>"
+"checksum gdk 0.7.0 (git+https://github.com/gtk-rs/gdk)" = "<none>"
+"checksum gdk-pixbuf 0.3.0 (git+https://github.com/gtk-rs/gdk-pixbuf)" = "<none>"
+"checksum gdk-pixbuf-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum gdk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum gio 0.3.0 (git+https://github.com/gtk-rs/gio)" = "<none>"
+"checksum gio-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum glib 0.4.0 (git+https://github.com/gtk-rs/glib)" = "<none>"
+"checksum glib-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum gobject-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum gtk 0.3.0 (git+https://github.com/gtk-rs/gtk.git)" = "<none>"
+"checksum gtk-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum lazy_static 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "c8f31047daa365f19be14b47c29df4f7c3b581832407daabe6ae77397619237d"
+"checksum libc 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)" = "96264e9b293e95d25bfcbbf8a88ffd1aedc85b754eba8b7d78012f638ba220eb"
+"checksum pango 0.3.0 (git+https://github.com/gtk-rs/pango)" = "<none>"
+"checksum pango-sys 0.5.0 (git+https://github.com/gtk-rs/sys)" = "<none>"
+"checksum pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)" = "3a8b4c6b8165cd1a1cd4b9b120978131389f64bdaf456435caa41e630edba903"
+"checksum winapi 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "b09fb3b6f248ea4cd42c9a65113a847d612e17505d6ebd1f7357ad68a8bf8693"
+"checksum winapi-i686-pc-windows-gnu 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)" = "ec6667f60c23eca65c561e63a13d81b44234c2e38a6b6c959025ee907ec614cc"
+"checksum winapi-x86_64-pc-windows-gnu 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)" = "98f12c52b2630cd05d2c3ffd8e008f7f48252c042b4871c72aed9dc733b96668"
