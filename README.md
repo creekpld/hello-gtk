@@ -1,3 +1,7 @@
+# This is not the Repo you are looking for! :alien:
+
+New development is taking place in [gitlab.com/pdylong/hello-gtk](https://gitlab.com/pdylong/hello-gtk) :ok_hand:.
+
 # example GTK app with Rust
 
 ## Acknowledgment 
